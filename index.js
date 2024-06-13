@@ -12,6 +12,10 @@ app.get("/", (req, res) => {
   res.send("hellow from send method");
 });
 
+app.get("/login", (req, res) => {
+  res.send("welcome to login page");
+});
+
 app.post("/teas", (req, res) => {
   //
   const { name, price } = req.body;
